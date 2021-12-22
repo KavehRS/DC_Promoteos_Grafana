@@ -37,7 +37,9 @@ Add to /etc/profile.d/java.sh
 	$ sudo yum install docker-ce-19.03.9-3.el7.x86_64.rpm docker-ce-cli-19.03.9-3.el7.x86_64.rpm containerd.io-1.2.6-3.3.el7.x86_64.rpm -y
 	$ sudo systemctl enable docker
 	$ sudo systemctl start docker
+	
 For Checking :
+
 	$ sudo docker run hello-world
 
 
