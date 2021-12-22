@@ -9,11 +9,12 @@ DockerCompose  Promoteos &amp; Grafana
 	sudo vi /etc/profile.d/java.sh
 
  
-
-Add	export JAVA_HOME=/usr/java/jdk1.8.0_221
+Add to /etc/profile.d/java.sh
+	export JAVA_HOME=/usr/java/jdk1.8.0_221
 	export PATH=$PATH:$JAVA_HOME/bin
 	export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
-	
+
+
 	source /etc/profile.d/java.sh
 	sudo update-alternatives --install /usr/bin/java java /usr/java/jdk1.8.0_221/bin/java 1
 	sudo update-alternatives --install /usr/bin/javac javac /usr/java/jdk1.8.0_221/bin/javac 1
