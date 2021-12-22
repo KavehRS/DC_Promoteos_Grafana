@@ -1,10 +1,10 @@
 # DC_Promoteos_Grafana
 DockerCompose  Promoteos &amp; Grafana
 
-## Install Docker
-### Install Java (CentOS)
+## Install Docker & Dependencies
+### Install Java (CentOS 7)
 	$ sudo mkdir /usr/java
-	$ wget
+	$ wget https://github.com/KavehRS/website/blob/master/FileServer/oracle.com/otn-pub/java/jdk/8u221-b11/jdk-8u221-linux-x64.tar.gz
 	$ sudo tar -zxvf jdk-8u221-linux-x64.tar.gz -C /usr/java
 	$ sudo vi /etc/profile.d/java.sh
 
@@ -22,18 +22,21 @@ Add to /etc/profile.d/java.sh
 	$ sudo update-alternatives --config java
 	$ java -version
 
-### Install Python (CentOS)
+### Install Python (CentOS 7)
 	$ sudo yum install -y python36 python36-libs python36-devel python36-pip
 	$ sudo yum groupinstall -y "Development Tools"
 	$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
 	$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2
 	$ sudo alternatives --config python
-## Install Docker
-### Download Packages :
-	docker-ce-19.03.9-3.el7.x86_64.rpm
-	docker-ce-cli-19.03.9-3.el7.x86_64.rpm
-	containerd.io-1.2.6-3.3.el7.x86_64.rpm
-### Install
+### Install Docker
+Download Packages :
+
+	$ wget  https://github.com/KavehRS/website/blob/master/FileServer/linux/centos/7/x86_64/stable/Packages/docker-ce-19.03.9-3.el7.x86_64.rpm
+	$ wget https://github.com/KavehRS/website/blob/master/FileServer/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
+	$ wget https://github.com/KavehRS/website/blob/master/FileServer/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm
+	
+Install
+
 	$ sudo yum install docker-ce-19.03.9-3.el7.x86_64.rpm docker-ce-cli-19.03.9-3.el7.x86_64.rpm containerd.io-1.2.6-3.3.el7.x86_64.rpm -y
 	$ sudo systemctl enable docker
 	$ sudo systemctl start docker
@@ -45,7 +48,19 @@ For Checking :
 
 
 
-## Install compose at Fedora
+## Install Docker-compose at Fedora
+### Install at CentOS 7
+	$ sudo yum update -y
+	$ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+	$ sudo chmod +x /usr/local/bin/docker-compose
+
+test docker-compose if fails :
+
+	 $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+
+
+### Install at Fedora
 
 	$ sudo dnf update -y
 	$ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
