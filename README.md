@@ -37,5 +37,6 @@ Add to /etc/profile.d/java.sh
 	$ sudo chmod +x /usr/local/bin/docker-compose
 
 test docker-compose if fails :
+
 	 $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
