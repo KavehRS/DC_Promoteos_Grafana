@@ -34,10 +34,13 @@ Add to /etc/profile.d/java.sh
 ### Set Dns in Centos 7 (for shecan.ir)
 
 Edit network config
+
 	# vi /etc/sysconfig/network-scripts/ifcfg-eth0
+	
 <br>
 	
 Edit or Add DNSs (for example):
+
 	DNS1="178.22.122.100"
 	DNS2="185.51.200.2"
 
