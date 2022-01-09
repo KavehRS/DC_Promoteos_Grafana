@@ -28,6 +28,25 @@ Add to /etc/profile.d/java.sh
 	$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
 	$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2
 	$ sudo alternatives --config python
+	
+	
+	
+### Set Dns in Centos 7 (for shecan.ir)
+
+Edit network config
+	# vi /etc/sysconfig/network-scripts/ifcfg-eth0
+<br>
+	
+Edit or Add DNSs (for example):
+	DNS1="178.22.122.100"
+	DNS2="185.51.200.2"
+
+	
+
+
+
+
+
 ### Install Docker
 Download Packages :
 
