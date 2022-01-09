@@ -41,8 +41,8 @@ Edit network config
 	
 Edit or Add DNSs (for example):
 
-	DNS1="178.22.122.100"
-	DNS2="185.51.200.2"
+	DNS1="1.1.1.1"
+	DNS2="1.0.0.1"
 
 	
 
