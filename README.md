@@ -92,4 +92,12 @@ test docker-compose if fails :
 test docker-compose if fails :
 
 	 $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+	 
+### Docker Compose For Prometheus + Grafana	 
+	 
+Clone the repo:: https://github.com/KavehRS/docker-images.git
+
+Then go to prometheus-grafana folder and run docker-compose up -d.
+
+This will start Prometheus on http://localhost:9090 and Grafana on http://localhost:3000.
 
