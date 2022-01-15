@@ -45,8 +45,10 @@ Edit or Add DNSs (for example):
 	DNS2="1.0.0.1"
 
 	
+<br>
 
 
+sudo systemctl restart NetworkManager
 
 
 
