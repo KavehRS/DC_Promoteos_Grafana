@@ -48,7 +48,7 @@ Edit or Add DNSs (for example):
 <br>
 
 
-sudo systemctl restart NetworkManager
+	$ sudo systemctl restart NetworkManager
 
 
 
