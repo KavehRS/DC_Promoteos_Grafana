@@ -103,3 +103,10 @@ Then go to prometheus-grafana folder and run docker-compose up -d.
 
 This will start Prometheus on http://localhost:9090 and Grafana on http://localhost:3000.
 
+### swarm Port in firewall
+
+	# firewall-cmd --add-port=2377/tcp --permanent 
+	# firewall-cmd --reload
+
+
+
