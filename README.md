@@ -75,7 +75,7 @@ For Checking :
 ## Install Docker-compose at Fedora
 ### Install at CentOS 7
 	$ sudo yum update -y
-	$ sudo curl -L "https://github.com/docker/compose/releases/download/2.2.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+	$ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 	$ sudo chmod +x /usr/local/bin/docker-compose
 
 test docker-compose if fails :
@@ -97,9 +97,9 @@ test docker-compose if fails :
 	 
 ### Docker Compose For Prometheus + Grafana	 
 	 
-Clone the repo:: https://github.com/KavehRS/docker-images.git
+Clone the repo:: https://github.com/KavehRS/Docker_practice.git
 
-Then go to prometheus-grafana folder and run docker-compose up -d.
+Then go to yml-files folder and run docker-compose up -d.
 
 This will start Prometheus on http://localhost:9090 and Grafana on http://localhost:3000.
 
