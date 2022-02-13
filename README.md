@@ -4,7 +4,7 @@ DockerCompose  Promoteos &amp; Grafana
 ## Install Docker & Dependencies
 ### Install Java (CentOS 7)
 	$ sudo mkdir /usr/java
-	$ wget https://github.com/KavehRS/website/blob/master/FileServer/oracle.com/otn-pub/java/jdk/8u221-b11/jdk-8u221-linux-x64.tar.gz
+	$ wget https://files-cdn.liferay.com/mirrors/download.oracle.com/otn-pub/java/jdk/8u221-b11/jdk-8u221-linux-x64.tar.gz
 	$ sudo tar -zxvf jdk-8u221-linux-x64.tar.gz -C /usr/java
 	$ sudo vi /etc/profile.d/java.sh
 
@@ -55,9 +55,9 @@ Edit or Add DNSs (for example):
 ### Install Docker
 Download Packages :
 
-	$ wget  https://github.com/KavehRS/website/blob/master/FileServer/linux/centos/7/x86_64/stable/Packages/docker-ce-19.03.9-3.el7.x86_64.rpm
-	$ wget https://github.com/KavehRS/website/blob/master/FileServer/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
-	$ wget https://github.com/KavehRS/website/blob/master/FileServer/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm
+	$ wget  https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-19.03.9-3.el7.x86_64.rpm
+	$ wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
+	$ wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm
 	
 Install
 
